@@ -1,1 +1,29 @@
+Recursion : Function call itself
+we need to find the recursive function to solve the proble using recursion 
+which problems can be solved by recursion?
+The problem which we an divide into sub problems and the can create a pattern or recursive function out of it 
+For example : fibonacci number
+
+1,1,2,3,5,8,13.....
+
+you can write f(n) = f(n-1) + f(n-2)
+
+and then we have a base condition to break the loop for keep going : 
+
+public int fibo(int n)
+{
+if(n < 2)
+{
+return n ;
+}
+else{
+return fibo(n-2) + fibo(n-1);
+}
+
+}
+
+public static void main(String args[])
+{
+fibo(5);
+}
 
