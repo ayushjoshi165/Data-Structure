@@ -26,7 +26,7 @@ public static void main(String args[])
 {
 fibo(5);
 }
-// it is very inefficient so if we see in recursion tree we are repeating some work so we will solve it by dynamic programming
+// it is very inefficient (golden ration raise to the power n  )so if we see in recursion tree we are repeating some work so we will solve it by dynamic programming
 
 
  ******Working with varaible in recurstion 1. In the argument, 2. return type 3. in the body of function 
