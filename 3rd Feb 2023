@@ -27,3 +27,21 @@ public static void main(String args[])
 fibo(5);
 }
 
+ ******Working with varaible in recurstion 1. In the argument, 2. return type 3. in the body of function 
+
+// three varaible points => 
+
+
+Binary serach 
+
+1. Comparing 
+2. devide into 2 half
+3. f(n) = o(1)(comparision) + f(N/2)(dividing array in two parts )
+
+
+types of recurrance relation 
+
+1 . leniar  ex .fibonacci
+2. Divide and conquer ex - Binary search (serach factor is reduced by 2 or a factor)
+
+
