@@ -47,5 +47,17 @@ types of recurrance relation
 2. Divide and conquer ex - Binary search (serach factor is reduced by 2 or a factor)
 
 
+-------------------------------------------------
+
+Binary search recursion 
+
+we keept in mid three things that what will go in these three sections 
+
+1. In the argument
+<== In arguments thisngs which will need in the next recursive all will go for example arr, target, start, end. Mid
+wont go in arguments because it is not required for each recursive call , mid will go in body as we need that just onece when we enter 
+2. return type  : 
+return type what we need as ans data type
+3. in the body of function : In the body mid will go as we need to set it up once before checking conditions.
 
 
