@@ -1,0 +1,15 @@
+What is time clompexity ? 
+
+Ans : Time complrxity is a function which gives relation about how the time will grow with the input.
+Time complexity  != time taken (we discussed example of mac and old machine) 
+
+Big O notation - it considers te upper bound that is the worst complexity of an algorithm 
+Big Omega - It considers the lower bound meaninging if coplexity is n2 then that is the lower bound 
+Theta notation - It combines both Big O and omega
+
+There are 2 more 
+
+small O and Small theta - these are moe strict in terms of range i.e if complexity is n2 then the complexity must be less thana that not equal as in case of Big O
+Same goes with small theta.
+
+
