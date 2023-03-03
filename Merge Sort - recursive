@@ -1,0 +1,79 @@
+We brake the array into left and right , sort each part and combile
+
+we wrote 2 fucnction ,sort function and meger function 
+
+// this is recursive appraoch so we are breaking till we are left with the single elemnt and tha is always a sorted array
+
+// by using merge function we are mergin 2 sorted array and the approach we are following is we kept pointer at each arraty and comparing and pushing value into a new array 
+according to our sorting order
+
+
+package com.sorting;
+
+import java.util.Arrays;
+
+public class MergeSortThroughREC {
+
+
+    public static int[] sort(int arr[] )
+    {
+       if(arr.length ==1) return arr;
+
+            int mid  = arr.length/2;
+
+            int[] left = sort(Arrays.copyOfRange(arr,0, mid));
+            int [] right = sort(Arrays.copyOfRange(arr,mid, arr.length ));
+
+return merge(left, right);
+    }
+
+
+
+    private static int[] merge(int [] first , int[] second)
+    {
+
+        int sortedarr[] = new int[first.length + second.length];
+        int left = 0 ;
+        int right = 0 ;
+        int current = 0 ;
+
+        while(left < first.length && right < second.length )
+        {
+            if(first[left] < second[right])
+            {
+                sortedarr[current]  = first[left];
+                current++;
+                left++;
+            }
+            else
+            {
+                sortedarr[current]  = second[right];
+                current++;
+                right++;
+            }
+
+        }
+        while(left < first.length  )
+        {
+            sortedarr[current] = first[left];
+            left++;
+            current++;
+        }
+        while(right < second.length  )
+        {
+            sortedarr[current] = second[right];
+            right++;
+            current++;
+        }
+        return sortedarr;
+    }
+    public static void main(String[] args) {
+int array[] = {5,4,2,1};
+
+array = sort(array);
+
+        System.out.println(Arrays.toString(array));
+
+    }
+}
+
